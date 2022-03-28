@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Automation2Assignment {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Varun Prakash\\Downloads\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\Pulkit Verma\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
@@ -19,7 +19,7 @@ public class Automation2Assignment {
 
 		// Account Login
 		WebElement email = driver.findElement(By.id("email"));
-		email.sendKeys("varunprakash984@gmail.com");
+		email.sendKeys("pulkitverma.abesit@gmail.com");
 
 		WebElement password = driver.findElement(By.id("passwd"));
 		password.sendKeys("Qwerty");
