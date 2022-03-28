@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Automation2Assignment {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Varun Prakash\\Downloads\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\Pulkit Verma\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
@@ -16,7 +16,7 @@ public class Automation2Assignment {
 		driver.findElement(By.tagName("a")).click();
 
 		WebElement emailAddress = driver.findElement(By.id("email_create"));
-		emailAddress.sendKeys("varunprakash984@gmail.com");
+		emailAddress.sendKeys("pulkitverma.abesit@gmail.com");
 
 		driver.findElement(By.id("SubmitCreate")).click();
 
@@ -26,10 +26,10 @@ public class Automation2Assignment {
 		// Filling the registration form
 
 		WebElement firstName = driver.findElement(By.id("customer_firstname"));
-		firstName.sendKeys("Varun");
+		firstName.sendKeys("Pulkit");
 
 		WebElement lastName = driver.findElement(By.id("customer_lastname"));
-		lastName.sendKeys("Prakash");
+		lastName.sendKeys("Verma");
 
 		WebElement password = driver.findElement(By.id("passwd"));
 		password.sendKeys("Qwerty");
@@ -45,10 +45,10 @@ public class Automation2Assignment {
 		dropDownYears.selectByVisibleText("2000  ");
 
 		WebElement firstNameAddress = driver.findElement(By.id("firstname"));
-		firstNameAddress.sendKeys("Varun");
+		firstNameAddress.sendKeys("Pulkit");
 
 		WebElement lastNameAddress = driver.findElement(By.id("firstname"));
-		lastNameAddress.sendKeys("Prakash");
+		lastNameAddress.sendKeys("Verma");
 
 		WebElement company = driver.findElement(By.id("company"));
 		company.sendKeys("To The New");
